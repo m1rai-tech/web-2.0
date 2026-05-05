@@ -1,0 +1,33 @@
+/* ── UI micro-animations ───────────────────────────────────────────────────── */
+@keyframes menuIn {
+  from { opacity: 0; transform: scale(0.96) translateY(-6px); }
+  to   { opacity: 1; transform: scale(1)    translateY(0);    }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+/* ── Ambient background drift ─────────────────────────────────────────────── */
+@keyframes driftA {
+  0%, 100% { transform: translate(0%,    0%)   scale(1);    }
+  28%       { transform: translate(5%,   -4%)  scale(1.04); }
+  55%       { transform: translate(-4%,   6%)  scale(0.97); }
+  78%       { transform: translate(3%,    2%)  scale(1.02); }
+}
+@keyframes driftB {
+  0%, 100% { transform: translate(0%,    0%)   scale(1);    }
+  35%       { transform: translate(-7%,   5%)  scale(1.06); }
+  65%       { transform: translate(5%,   -7%)  scale(0.95); }
+}
+@keyframes driftC {
+  0%, 100% { transform: translate(0%,    0%)   scale(1);    }
+  45%       { transform: translate(4%,    6%)  scale(1.05); }
+  80%       { transform: translate(-3%,  -3%)  scale(0.98); }
+}
+
+.animate-menu-in  { animation: menuIn  0.16s cubic-bezier(0.16,1,0.3,1) both; }
+.animate-fade-up  { animation: fadeUp  0.22s ease-out both; }
+.ambient-a        { animation: driftA  24s ease-in-out infinite; }
+.ambient-b        { animation: driftB  31s ease-in-out infinite; }
+.ambient-c        { animation: driftC  19s ease-in-out infinite; }

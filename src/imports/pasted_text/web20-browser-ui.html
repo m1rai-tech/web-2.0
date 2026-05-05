@@ -1,0 +1,487 @@
+Create a polished, production-quality desktop browser UI prototype called “Web 2.0”.
+
+Important:
+This must NOT be a static mockup.
+This must be a real working HTML/CSS/JavaScript prototype that can later be integrated into Electron.
+Keep the current visual direction, but fix the design, improve the layout, remove inconsistencies, and make the whole interface feel premium, balanced, and bug-free.
+
+Main goal:
+Transform the current Web 2.0 browser UI into a clean, minimal, elegant, and realistic browser shell with a refined StartHub homepage.
+
+Technology:
+- Use only vanilla HTML, CSS, and JavaScript
+- No React
+- No frameworks
+- Keep code modular, readable, and easy to later move into Electron
+- Structure the code clearly for future Electron integration
+
+Overall visual style:
+- dark premium desktop UI
+- black / graphite / white palette
+- subtle glassmorphism
+- soft borders
+- thin separators
+- rounded corners
+- refined typography
+- smooth subtle hover/focus states
+- no bright neon
+- no gaming RGB
+- no visual clutter
+- minimal but functional
+- modern, private, focused browser feel
+
+Do not copy Chrome, Arc, Safari, Opera GX, Edge, or MAUZER directly.
+Make it feel original, premium, and calm.
+
+==================================================
+1. FIX THE CURRENT DESIGN PROBLEMS
+==================================================
+
+The current version has visible layout and composition issues.
+Fix all of them.
+
+Problems to solve:
+- The StartHub composition feels slightly unbalanced
+- The top bar, tabs, address bar, and actions need cleaner alignment
+- The clock feels detached from the layout
+- The Favorite Sites section needs better hierarchy and spacing
+- The “Add site” button placement feels awkward
+- The UI has too much unused space without enough intentional structure
+- Search and address bar feel duplicated and not visually coordinated enough
+- Cards need cleaner spacing, better alignment, and consistent sizing
+- Sidebar and top bar should feel part of one design system
+- Everything should feel more finished, premium, and product-ready
+
+Fix these visually and structurally.
+
+==================================================
+2. LAYOUT
+==================================================
+
+Create a full desktop browser layout with:
+
+- left vertical sidebar
+- top unified browser bar
+- main content viewport
+- StartHub homepage in the viewport
+- subtle bottom status bar
+
+Use a stable, clean structure:
+- full height app
+- no horizontal scroll
+- responsive enough for desktop widths 1280px+
+- clean spacing system
+- consistent component alignment
+- no broken overflow
+- no dead empty blocks
+
+Suggested layout proportions:
+- sidebar width: around 72px
+- top bar height: around 64px
+- main viewport fills remaining space
+
+==================================================
+3. SIDEBAR
+==================================================
+
+Create a minimal vertical sidebar.
+
+Top:
+- W2 logo button
+
+Navigation buttons:
+- Home
+- Bookmarks
+- History
+- Downloads
+- Settings
+
+Bottom:
+- Focus button
+
+Each item must have:
+- icon
+- small label
+- hover state
+- active state
+- consistent alignment
+- clean spacing
+
+Visual requirements:
+- sidebar should feel elegant and narrow
+- no oversized labels
+- active item should be clear but subtle
+- bottom Focus button should align nicely with the whole sidebar
+- no awkward gaps
+
+Functionality requirements:
+- all sidebar buttons should be clickable
+- Home opens StartHub
+- Bookmarks opens bookmarks page or popover
+- History opens history page or popover
+- Downloads opens downloads page or popover
+- Settings opens settings page
+- Focus toggles a minimal mode class on body
+
+==================================================
+4. TOP BROWSER BAR
+==================================================
+
+Create one unified top browser bar.
+Do NOT split it into disconnected rows.
+
+Top bar must include:
+- tabs on the left
+- new tab button
+- navigation buttons
+- wide address bar
+- right-side action buttons
+
+Tabs:
+- active tab styling
+- clean tab spacing
+- favicon + title aligned properly
+- close button aligned
+- new tab button +
+- tabs should feel real and usable
+
+Default tabs:
+- Start Hub
+- Figma — Design
+- GitHub
+
+Navigation buttons:
+- back
+- forward
+- reload
+- home
+
+Address bar:
+- wide, centered, and visually important
+- it should feel like a real browser address/search bar
+- on StartHub it should display placeholder: “Search or enter address”
+- do not display “web20://start” on homepage
+- it should be slightly more compact and elegant than the StartHub hero search
+- it must visually coordinate with the StartHub search, but still feel like the functional browser field
+
+Right actions:
+- downloads
+- bookmarks
+- history
+- settings
+- AI
+- menu
+
+Top bar visual requirements:
+- perfect vertical alignment
+- even spacing
+- no floating or cramped icons
+- consistent button sizes
+- subtle hover and active states
+- clean glass/dark premium style
+
+==================================================
+5. STARTHUB HOMEPAGE
+==================================================
+
+Redesign the StartHub homepage so it feels balanced, elegant, minimal, and product-quality.
+
+Keep only:
+- small eyebrow label: START HUB
+- large title: Web 2.0
+- subtitle: Calm browsing for focused work, research, and everyday search.
+- large hero search bar
+- time/date widget
+- Favorite Sites section
+
+Remove:
+- workspaces
+- notes
+- recent
+- pinned
+- noisy dashboard blocks
+- any unnecessary side widgets
+- any prototype clutter
+
+The StartHub must feel clean and centered.
+Use generous but intentional spacing.
+Do not leave awkward emptiness.
+
+==================================================
+6. HERO SEARCH
+==================================================
+
+Create a large, centered homepage search bar below the title.
+
+Requirements:
+- this is the main hero search
+- slightly larger than the top address bar
+- elegant rounded shape
+- icon on the left
+- AI button on the right
+- placeholder: “Search or enter address”
+- subtle glass/dark style
+- visually centered and prominent
+
+Functionality:
+- Enter navigates
+- if input looks like a URL, open URL
+- if input is plain text, open Google search
+- AI button opens a simple AI popover
+
+Important:
+The hero search should feel related to the top address bar, but more central and more “homepage focused”.
+
+==================================================
+7. CLOCK / DATE WIDGET
+==================================================
+
+Fix the clock placement and make it feel naturally integrated.
+
+Current issue:
+The clock tends to feel detached or floating.
+
+New requirement:
+- make the clock a compact premium card
+- place it close to the hero area in a visually balanced way
+- it should not float awkwardly
+- it should not compete with the title
+- it should feel like a secondary but useful element
+
+Suggested placement:
+- centered below the search bar, OR
+- slightly below and offset in a balanced way
+
+Show:
+- large time
+- small date
+- subtle border and surface
+- elegant spacing
+
+Functionality:
+- live updating time
+- live date
+
+==================================================
+8. FAVORITE SITES / QUICK ACCESS
+==================================================
+
+Create a clean “Favorite sites” section below the hero area.
+
+Section header:
+- small label or heading
+- title: Favorite sites
+- “+ Add site” button aligned cleanly in the same header row, preferably on the right inside the section header
+
+Important:
+Do not let the Add site button float awkwardly outside the section composition.
+
+Cards:
+- equal sized cards
+- consistent spacing
+- same height and width
+- favicon
+- title
+- hostname
+- subtle hover effect
+- small three-dot menu button
+- no broken text
+- no malformed items
+- no weird wrapping
+
+Default cards:
+- YouTube
+- Figma
+- GitHub
+- Google
+- ChatGPT
+
+Design requirements:
+- 5-card grid in one row on wide desktop
+- elegant card padding
+- compact but readable
+- use more premium spacing and hierarchy
+- section should not be too large or too small
+- avoid huge empty container areas
+
+Functionality:
+- cards render from JavaScript array/localStorage
+- click opens site in active tab
+- + Add site opens modal
+- card menu supports Edit and Remove
+- use Google favicon service:
+  https://www.google.com/s2/favicons?domain=DOMAIN&sz=64
+- if favicon fails, use letter fallback
+
+==================================================
+9. MAIN CONTENT BALANCE
+==================================================
+
+Improve the entire composition.
+
+Make sure:
+- title, subtitle, search, clock, and favorite sites have consistent vertical rhythm
+- there is no awkward dead space
+- sections are centered and properly spaced
+- the grid aligns with the overall layout
+- the page feels intentional, not prototype-like
+- the spotlight/grid background supports the design instead of distracting from it
+
+==================================================
+10. BACKGROUND
+==================================================
+
+Use a minimal dark atmospheric background:
+- soft black / graphite gradient
+- subtle grid or dot texture
+- soft radial spotlight around mouse position
+- very subtle depth
+- not too bright
+- not too noisy
+
+Spotlight:
+- implement real JS mouse-following effect
+- use CSS variables for mouse position
+- smooth and subtle
+- active only on StartHub
+
+==================================================
+11. STATUS BAR
+==================================================
+
+Create a subtle bottom status bar.
+Keep it minimal.
+
+Possible content:
+- privacy shield status
+- blockers count
+- data saved
+- session info
+- active page name
+
+Requirements:
+- not noisy
+- small typography
+- refined spacing
+- should not distract from the main content
+
+==================================================
+12. REAL FUNCTIONALITY
+==================================================
+
+This is not just a visual prototype.
+All visible controls must have basic JavaScript behavior.
+
+Required behavior:
+- tabs can be created, switched, and closed
+- address bar handles URL or Google search
+- hero search handles URL or Google search
+- sidebar buttons open their target views
+- Add site modal works
+- Edit site works
+- Remove site works
+- quick access persists in localStorage
+- bookmarks persist in localStorage
+- history persists in localStorage
+- settings page exists
+- AI button opens a simple popover
+- downloads/bookmarks/history/settings/menu buttons open real popovers or internal pages
+
+For external pages:
+Do NOT use iframe.
+Instead, render a clean “External page preview” placeholder inside the content area with:
+- title
+- URL
+- favicon
+- short note:
+  “This preview will later be replaced by an Electron webview.”
+
+Structure the code so it is easy to later replace this placeholder with Electron webview logic.
+
+Navigation logic:
+- web20://start -> render StartHub
+- web20://settings -> render Settings page
+- https://... -> render external page preview
+
+==================================================
+13. SETTINGS / INTERNAL PAGES
+==================================================
+
+Create internal pages for:
+- Settings
+- Bookmarks
+- History
+- Downloads
+
+Settings page should include:
+- theme section (dark only for now)
+- clear history
+- clear bookmarks
+- clear quick access
+- about Web 2.0
+
+These pages must match the same design language.
+
+==================================================
+14. CODE QUALITY
+==================================================
+
+Generate clean code and clean structure.
+
+Use files like:
+- index.html
+- styles/tokens.css
+- styles/base.css
+- styles/layout.css
+- styles/components.css
+- styles/start.css
+- scripts/app.js
+- scripts/tabs.js
+- scripts/navigation.js
+- scripts/quick-access.js
+- scripts/menus.js
+- scripts/clock.js
+- scripts/spotlight.js
+
+Requirements:
+- no console errors
+- no dead buttons
+- no broken layout
+- no horizontal scrollbar
+- no malformed quick access items
+- no inconsistent card sizes
+- no awkward button placement
+- no misaligned icons
+- no ugly spacing
+- no random empty containers
+- use reusable functions and components
+- use consistent CSS variables
+- keep it easy to adapt into Electron later
+
+==================================================
+15. FINAL EXPECTED RESULT
+==================================================
+
+The final result should feel like:
+- a real premium browser product
+- visually polished
+- balanced
+- minimal
+- coherent
+- clean
+- bug-free
+- elegant
+- Electron-ready
+
+When finished, the interface must look better than the current version:
+- cleaner layout
+- better top bar alignment
+- better spacing
+- better clock placement
+- better Favorite sites section
+- better Add site button placement
+- better card grid
+- better visual hierarchy
+- more premium and finished overall
+
+Generate the full working HTML/CSS/JavaScript prototype accordingly.
